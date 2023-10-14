@@ -1,0 +1,154 @@
+
+body{
+
+   /* background-image: url(https://images.unsplash.com/photo-1655159428752-c700435e9983?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2832&q=80);
+   background-size: 100em;
+   */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-image: radial-gradient(rgb(0, 83, 0), rgb(0, 0, 0));
+   min-height: 100vh;
+   color: #cfc;
+   gap: 3vh;
+}
+.button {
+    display: inline-block;
+    padding: .25rem .5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #000;
+    background-color: re#a8a4b1;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #1e307b;
+  }
+  
+  .button:hover {
+    background-color: #3e8e41;
+  color: #fff;
+}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #801e1e;
+    transform: translateY(4px);
+    
+  }
+
+.face-down{
+  background: #222;
+}
+
+
+#dealer-Hand{
+    width: 500px;
+    height: 200px;
+    border: 10px solid black;
+    margin: auto;
+}
+
+#button{
+    border-radius: 8px;
+
+}
+
+.card {
+  color: transparent;
+  border-radius: 8px;
+  height:120px;
+  width: 75px;
+  padding: 20px;
+  font-size: 3rem;
+  background-image: url('/assets/cards/ace_of_clubs.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.red {
+  color: red;
+}
+
+#dealer-hand {
+  padding: 20px;
+  display: flex;
+  gap: 6px;
+}
+#player-hand {
+padding: 20px;
+display: flex;
+gap: 6px;
+}
+
+#scores {
+  position: absolute;
+  top: 2vh;
+  left: 2vh;
+}
+
+.hand {
+  min-width: 60vw;
+  height: 12rem;
+  display: flex;
+  justify-items: center;
+  border: 3px solid #cfc;
+  border-radius: 1rem;
+}
+
+._2C { background-image: url('/assets/cards/2C.png'); }
+._3C { background-image: url('/assets/cards/3_of_clubs.png'); }
+._4C { background-image: url('/assets/cards/4_of_clubs.png'); }
+._5C { background-image: url('/assets/cards/5_of_clubs.png'); }
+._6C { background-image: url('/assets/cards/6_of_clubs.png'); }
+._7C { background-image: url('/assets/cards/7_of_clubs.png'); }
+._8C { background-image: url('/assets/cards/8_of_clubs.png'); }
+._9C { background-image: url('/assets/cards/9_of_clubs.png'); }
+._10C { background-image: url('/assets/cards/10_of_clubs.png'); }
+._JC { background-image: url('/assets/cards/jack_of_clubs.png'); }
+._QC { background-image: url('/assets/cards/queen_of_clubs.png'); }
+._KC { background-image: url('/assets/cards/king_of_clubs.png'); }
+._AC { background-image: url('/assets/cards/ace_of_clubs.png'); }
+
+._2D { background-image: url('/assets/cards/2D.png'); }
+._3D { background-image: url('/assets/cards/3_of_diamonds.png'); }
+._4D { background-image: url('/assets/cards/4_of_diamonds.png'); }
+._5D { background-image: url('/assets/cards/5_of_diamonds.png'); }
+._6D { background-image: url('/assets/cards/6_of_diamonds.png'); }
+._7D { background-image: url('/assets/cards/7_of_diamonds.png'); }
+._8D { background-image: url('/assets/cards/8_of_diamonds.png'); }
+._9D { background-image: url('/assets/cards/9_of_diamonds.png'); }
+._10D { background-image: url('/assets/cards/10_of_diamonds.png'); }
+._JD { background-image: url('/assets/cards/jack_of_diamonds.png'); }
+._QD { background-image: url('/assets/cards/queen_of_diamonds.png'); }
+._KD { background-image: url('/assets/cards/king_of_diamonds.png'); }
+
+._2H { background-image: url('/assets/cards/2H.png'); }
+._3H { background-image: url('/assets/cards/3_of_hearts.png'); }
+._4H { background-image: url('/assets/cards/4_of_hearts.png'); }
+._5H { background-image: url('/assets/cards/5_of_hearts.png'); }
+._6H { background-image: url('/assets/cards/6_of_hearts.png'); }
+._7H { background-image: url('/assets/cards/7_of_hearts.png'); }
+._8H { background-image: url('/assets/cards/8_of_hearts.png'); }
+._9H { background-image: url('/assets/cards/9_of_hearts.png'); }
+._10H { background-image: url('/assets/cards/10_of_hearts.png'); }
+._JH { background-image: url('/assets/cards/jack_of_hearts.png'); }
+._QH { background-image: url('/assets/cards/queen_of_hearts.png'); }
+._KH { background-image: url('/assets/cards/king_of_hearts.png'); }
+
+._2S { background-image: url('/assets/cards/2_of_spades.png'); }
+._3S { background-image: url('/assets/cards/3_of_spades.png'); }
+._4S { background-image: url('/assets/cards/4_of_spades.png'); }
+._5S { background-image: url('/assets/cards/5_of_spades.png'); }
+._6S { background-image: url('/assets/cards/6_of_spades.png'); }
+._7S { background-image: url('/assets/cards/7_of_spades.png'); }
+._8S { background-image: url('/assets/cards/8_of_spades.png'); }
+._9S { background-image: url('/assets/cards/9_of_spades.png'); }
+._10S { background-image: url('/assets/cards/10_of_spades.png'); }
+._JS { background-image: url('/assets/cards/jack_of_spades.png'); }
+._QS { background-image: url('/assets/cards/queen_of_spades.png'); }
+._KS { background-image: url('/assets/cards/king_of_spades.png'); }
+

@@ -3,23 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BlackJack</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
 
-    <h1 id="BlackJack"> BlackJack</h1>
-    <div class="layout" ></div>
-    <h2> dealer hand</h2>
-    <div id= "dealer-Hand"> dealer-hand</div>
-    <h2> player hand</h2>
-    <div id="player-hand">Player Hand</div>
-    <br> <br>
+    <div id="scores">
+        <button class="button" onclick="start()">Start</button>
+        <button class="button" onclick="resetGame()">Reset</button>
+        <h2> dealer: <span id="dealerScore"></span></h2>
+        <h2> player: <span id="playerScore"></span></h2>
+    </div>
+        
+
+    <div id="dealer-hand" class="hand"> dealer-hand</div>
+    
+
+    <div id="controls">
+        <div id="status" ></div>
+        <button class="button" onclick="playOurTurn(true)">HIT</button>
+        <button class="button" onclick="playOurTurn(false)">HOLD</button>
+    </div>
 
 
-    <button id="deal"> Deal</button>
-    <button id="hold"> Hold</button>
+
+    <div id="player-hand" class="hand">Player Hand</div>
+
+
+
     
 
 
@@ -27,6 +39,6 @@
 
         
 
-            <script src="script.js">       </script>
+            <script src="deal.js">       </script>
 </body>
 </html>
